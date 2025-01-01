@@ -17,10 +17,25 @@ fn main() {
      *  src file path: src/basic/control.rs*
      *                                     *
      * ************************************/
-     let mut x:i32 = control::square(5);
-     println!("square of {} is {}",5,x);
-     x = 7;
-     println!("square of {} is {}",7,control::square(x));
+        control::contro_if(10);
+        let res:i32= control::factorial_calc_assign(10);  
+        println!("Factorial of 10 is {}",res);
+        // let a:[i32;5] = [1,2,3,4,5];
+        // let b:i32 = control::loop_iterable(a);
+        // println!("Sum of 1 to {} is {}",5,b);
+        // let x = 42;
+        // let y = &x; // Borrow x
+        // println!("y is a reference: {:p}", y); // Access the reference
+        // println!("Dereferenced y: {}", *y); 
+        // let z:i32 = control::loop_loop(5);
+        // println!("Sum of 1 to {} is {}",5,z);
+        // let x:i32 = control::loop_for(5);
+        // let y:i32 = control::loop_while(5);
+        // println!("Sum of 1 to {} is {}",5-1,y);
+        // let mut x:i32 = control::square(5);
+        // println!("square of {} is {}",5,x);
+        // x = 7;
+        // println!("square of {} is {}",7,control::square(x));
 
     /***************************************
      *                                     *
