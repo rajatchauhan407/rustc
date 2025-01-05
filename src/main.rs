@@ -19,6 +19,9 @@ fn main() {
      *                                        *
      * ****************************************/
     slice::string_slice();
+    slice::first_word();
+    slice::array_middle();
+    slice::word_counter();
 
     /******************************************
      *                                        *
