@@ -7,19 +7,66 @@ use basic::tuple_array;
 use basic::input_output;
 use basic::file_io;
 use basic::control;
+use basic::own_borrow;
+use basic::slice;
 fn main() {
-    let ans: i32 = tuple_array::arrs(5);
-    println!("Array: {}", ans);
+    // let ans: i32 = tuple_array::arrs(5);
+    // println!("Array: {}", ans);
+    
+     /******************************************
+     *                                        *
+     *  src file path: src/basic/slice.rs*
+     *                                        *
+     * ****************************************/
+    slice::string_slice();
+
+    /******************************************
+     *                                        *
+     *  src file path: src/basic/own_borrow.rs*
+     *                                        *
+     * ****************************************/
+    // let my_string = String::from("Hello, Rust!");
+    // own_borrow::take_ownership(my_string);
+    // println!("my_string: {}", my_string);
+
+    // Borrow Ownership
+    // let mut my_string = String::from("Hello, Rust!");
+    // let res:usize = own_borrow::borrow_ownership(&mut my_string);
+    // println!("my_string: {} and size is {}", my_string, res);
+    // println!("my_string: {}", my_string);
+
+    // let mut new_string = String::from("Hello");
+    
+    
+    // {  
+    //     let r1:&mut String = &mut new_string; //first mutable borrow
+    //     r1.push_str(", World!");
+    //     println!("{}", r1);
+    // } //now r1 goes out of scope
+    
+    // let r2:&mut String = &mut new_string;
+    // r2.push_str(", How are you!");
+    // println!("{}", r2);
 
 
+    //ownership assignment
+
+    // let mut my_str = String::from("Hello World");
+    // own_borrow::modufy_string(&mut my_str);
+    // println!("{}", my_str);
+    // let r1 = &my_str;
+    // println!("{:p}", r1);
+
+
+   
     /***************************************
      *                                     *
      *  src file path: src/basic/control.rs*
      *                                     *
      * ************************************/
-        control::contro_if(10);
-        let res:i32= control::factorial_calc_assign(10);  
-        println!("Factorial of 10 is {}",res);
+        // control::contro_if(10);
+        // let res:i32= control::factorial_calc_assign(10);  
+        // println!("Factorial of 10 is {}",res);
         // let a:[i32;5] = [1,2,3,4,5];
         // let b:i32 = control::loop_iterable(a);
         // println!("Sum of 1 to {} is {}",5,b);
