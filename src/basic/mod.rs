@@ -5,3 +5,4 @@ pub mod file_io;
 pub mod control;
 pub mod own_borrow;
 pub mod slice;
+pub mod struc;

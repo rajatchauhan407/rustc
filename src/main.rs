@@ -1,6 +1,7 @@
 mod basic;
 mod math;
 mod prog_mod;
+use basic::struc::Circle;
 // use math::operations;
 // use basic::basic10;
 use basic::tuple_array;
@@ -9,19 +10,38 @@ use basic::file_io;
 use basic::control;
 use basic::own_borrow;
 use basic::slice;
+use basic::struc;
 fn main() {
     // let ans: i32 = tuple_array::arrs(5);
     // println!("Array: {}", ans);
+
+
+    /******************************************
+     *                                        *
+     *  src file path: src/basic/struc.rs*
+     *                                        *
+     * ****************************************/
+    let rec = struc::Rectangle{
+        width: 30,
+        height: 50
+    };
+
+    println!("Rectangle: {:?}, Area of rectangle is {}", rec, rec.area());
     
+    let Circle:Circle = struc::Circle{
+        radius: 10.0
+    };
+
+    println!("Circle: {:?}, Circumference of circle is {:.2}", Circle, Circle.circumference());
      /******************************************
      *                                        *
      *  src file path: src/basic/slice.rs*
      *                                        *
      * ****************************************/
-    slice::string_slice();
-    slice::first_word();
-    slice::array_middle();
-    slice::word_counter();
+    // slice::string_slice();
+    // slice::first_word();
+    // slice::array_middle();
+    // slice::word_counter();
 
     /******************************************
      *                                        *
