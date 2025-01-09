@@ -6,3 +6,5 @@ pub mod control;
 pub mod own_borrow;
 pub mod slice;
 pub mod struc;
+pub mod enum_sel;
+pub mod vec;

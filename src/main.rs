@@ -11,10 +11,32 @@ use basic::control;
 use basic::own_borrow;
 use basic::slice;
 use basic::struc;
+use basic::enum_sel;
+use basic::enum_sel::TrafficLight;
+use basic::vec;
 fn main() {
     // let ans: i32 = tuple_array::arrs(5);
     // println!("Array: {}", ans);
+ /******************************************
+     *                                        *
+     *  src file path: src/basic/vec.rs*
+     *                                        *
+     * ****************************************/
 
+        vec::vectors();
+    /******************************************
+     *                                        *
+     *  src file path: src/basic/enum_sel.rs*
+     *                                        *
+     * ****************************************/
+     let existing = Some(5);
+     let missing = None;
+     enum_sel::get_number(existing);
+     enum_sel::get_number(missing); 
+    //  enum_sel::enum_1();
+     let light = TrafficLight::Red;
+     let result:&str = enum_sel::action(light);
+        println!("{}", result);
 
     /******************************************
      *                                        *
