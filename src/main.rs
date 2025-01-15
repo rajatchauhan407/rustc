@@ -1,60 +1,103 @@
 mod basic;
-mod math;
-mod prog_mod;
-use basic::struc::Circle;
+// mod math;
+// mod prog_mod;
+// use basic::struc::Circle;
 // use math::operations;
 // use basic::basic10;
-use basic::tuple_array;
-use basic::input_output;
-use basic::file_io;
-use basic::control;
-use basic::own_borrow;
-use basic::slice;
-use basic::struc;
-use basic::enum_sel;
-use basic::enum_sel::TrafficLight;
-use basic::vec;
+// use basic::tuple_array;
+// use basic::input_output;
+// use basic::file_io;
+// use basic::control;
+// use basic::own_borrow;
+// use basic::slice;
+// use basic::struc;
+// use basic::enum_sel;
+// use basic::enum_sel::TrafficLight;
+// use basic::vec;
+use basic::str;
+use basic::hashmp;
+use basic::iflet;
+use basic::err_hand;
 fn main() {
     // let ans: i32 = tuple_array::arrs(5);
     // println!("Array: {}", ans);
- /******************************************
+
+
+    /***************************************
+     *                                     *
+     *  src file path: src/basic/err_hand.rs*
+     *                                     *
+     * ************************************/
+
+    err_hand::result_err_hand();
+    
+     /******************************************
+     *                                        *
+     *  src file path: src/basic/hashmp.rs*
+     *                                        *
+     * ****************************************/
+    //  iflet::iflet_1();
+    //  iflet::match_tuples();
+    //  iflet::match_guard();
+    //  iflet::even_odd_input();
+
+    /******************************************
+     *                                        *
+     *  src file path: src/basic/hashmp.rs*
+     *                                        *
+     * ****************************************/
+
+    // hashmp::hashmap_init();
+    // hashmp::frequency_counter();
+
+     /******************************************
+     *                                        *
+     *  src file path: src/basic/str.rs*
+     *                                        *
+     * ****************************************/
+        // str::str_manipulation();
+        // str::str_slicing();
+        // str::str_replace();
+        // str::str_reverse();
+
+    /******************************************
      *                                        *
      *  src file path: src/basic/vec.rs*
      *                                        *
      * ****************************************/
 
-        vec::vectors();
+        // vec::vectors();
     /******************************************
      *                                        *
      *  src file path: src/basic/enum_sel.rs*
      *                                        *
      * ****************************************/
-     let existing = Some(5);
-     let missing = None;
-     enum_sel::get_number(existing);
-     enum_sel::get_number(missing); 
-    //  enum_sel::enum_1();
-     let light = TrafficLight::Red;
-     let result:&str = enum_sel::action(light);
-        println!("{}", result);
+    //  let existing = Some(5);
+    //  let missing = None;
+    //  enum_sel::get_number(existing);
+    //  enum_sel::get_number(missing); 
+    // //  enum_sel::enum_1();
+    //  let light = TrafficLight::Red;
+    //  let result:&str = enum_sel::action(light);
+    //     println!("{}", result);
 
     /******************************************
      *                                        *
      *  src file path: src/basic/struc.rs*
      *                                        *
      * ****************************************/
-    let rec = struc::Rectangle{
-        width: 30,
-        height: 50
-    };
+    // let rec = struc::Rectangle{
+    //     width: 30,
+    //     height: 50
+    // };
 
-    println!("Rectangle: {:?}, Area of rectangle is {}", rec, rec.area());
+    // println!("Rectangle: {:?}, Area of rectangle is {}", rec, rec.area());
     
-    let Circle:Circle = struc::Circle{
-        radius: 10.0
-    };
+    // let Circle:Circle = struc::Circle{
+    //     radius: 10.0
+    // };
 
-    println!("Circle: {:?}, Circumference of circle is {:.2}", Circle, Circle.circumference());
+    // println!("Circle: {:?}, Circumference of circle is {:.2}", Circle, Circle.circumference());
      /******************************************
      *                                        *
      *  src file path: src/basic/slice.rs*
@@ -104,6 +147,7 @@ fn main() {
 
 
    
+
     /***************************************
      *                                     *
      *  src file path: src/basic/control.rs*

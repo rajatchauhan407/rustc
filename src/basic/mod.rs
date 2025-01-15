@@ -8,3 +8,7 @@ pub mod slice;
 pub mod struc;
 pub mod enum_sel;
 pub mod vec;
+pub mod str;
+pub mod hashmp;
+pub mod iflet;
+pub mod err_hand;
