@@ -12,3 +12,4 @@ pub mod str;
 pub mod hashmp;
 pub mod iflet;
 pub mod err_hand;
+pub mod force_panic;

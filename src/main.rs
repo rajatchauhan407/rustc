@@ -18,10 +18,20 @@ use basic::str;
 use basic::hashmp;
 use basic::iflet;
 use basic::err_hand;
+use basic::force_panic;
 fn main() {
     // let ans: i32 = tuple_array::arrs(5);
     // println!("Array: {}", ans);
 
+    /*******************************************
+     *                                         *
+     *  src file path: src/basic/force_panic.rs*
+     *                                         *
+     * ****************************************/
+
+    // force_panic::check_positive();
+    // force_panic::example_panic(10);
+    force_panic::check_force_panic();
 
     /***************************************
      *                                     *
@@ -29,7 +39,10 @@ fn main() {
      *                                     *
      * ************************************/
 
-    err_hand::result_err_hand();
+    // err_hand::result_err_hand();
+    // err_hand::handle_file();
+    // err_hand::safe_reader();
+    
     
      /******************************************
      *                                        *
